@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-@import "./colors";
+@import "./_base.scss";
 @import "./_tipo.scss";
 
 body {
@@ -12,9 +12,6 @@ body {
   background-color: $bg-light;
   padding-bottom: 10rem;
 }
-
-@import "./_spacing.scss";
-@import "./_layout.scss";
 
 ul {
   display: flex;
@@ -29,3 +26,9 @@ ul {
 .borda {
   border: 1px solid red;
 }
+
+@import "./_header.scss";
+@import "./_hero.scss";
+@import "./_areas.scss";
+@import "./_chamada.scss";
+@import "./_depo.scss";

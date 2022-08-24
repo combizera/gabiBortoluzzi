@@ -1,0 +1,18 @@
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo img {
+  max-width: 100%;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__nav ul {
+  gap: $gap4;
+}

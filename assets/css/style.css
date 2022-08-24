@@ -1,7 +1,35 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto !important;
+}
+
+.divisor::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  left: -100px;
+  background: #8f2525;
+  transform: translateY(16px);
+}
+
+.divisor2::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 50%;
+  height: 4px;
+  right: 0px;
+  background: #8f2525;
+  transform: translateY(16px);
 }
 
 h1,
@@ -40,7 +68,8 @@ h4 {
 }
 
 h5 {
-  font-size: 24px;
+  font-size: 16px;
+  padding: 16px;
 }
 
 h6 {
@@ -138,7 +167,8 @@ a {
   line-height: 120%;
   color: #3e3b3b;
 }
-.tit-sec::after {
+
+.tit-sec-div::after {
   content: "";
   position: absolute;
   bottom: -48px;
@@ -148,20 +178,39 @@ a {
   background-color: #3e3b3b;
 }
 
+.txt-base {
+  line-height: 140%;
+  color: #aaa;
+}
+
 body {
   width: 100%;
   background-color: #faf9f2;
   padding-bottom: 10rem;
 }
 
+ul {
+  display: flex;
+  list-style-type: none;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-margin-start: 0;
+          margin-inline-start: 0;
+  -webkit-margin-end: 0;
+          margin-inline-end: 0;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+
+.borda {
+  border: 1px solid red;
+}
+
 header {
   display: flex;
   justify-content: space-between;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto !important;
 }
 
 .header__logo img {
@@ -176,17 +225,6 @@ header {
 
 .header__nav ul {
   gap: 32px;
-}
-
-.divisor::after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 110%;
-  height: 4px;
-  left: -100px;
-  background: #8f2525;
-  transform: translateY(16px);
 }
 
 .hero {
@@ -280,45 +318,102 @@ header {
 }
 
 .chamada-bg {
-  background: linear-gradient(90deg, #faf9f2 80.59%, #8b2424 80.6%);
+  background: linear-gradient(90deg, #faf9f2 80%, #8b2424 80%);
+}
+
+.chamada-bg2 {
+  background: linear-gradient(90deg, #8b2424 20%, #faf9f2 20%);
 }
 
 .chamada {
   display: grid;
   grid-template-columns: 66% 34%;
-  padding: 32px 0;
+  padding: 64px 0;
+}
+
+.chamada2 {
+  display: grid;
+  grid-template-columns: 34% 66%;
+  padding: 64px 0;
 }
 
 .chamada__txt {
-  padding-right: 4rem;
+  margin-right: 16%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+.chamada__txt a {
+  display: inline-flex;
+}
+.chamada__txt p {
+  margin: 64px 0 32px 0;
+}
+
+.chamada__txt2 {
+  margin-left: 16%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-.chamada__txt a {
+.chamada__txt2 a {
   display: inline-flex;
+}
+.chamada__txt2 p {
+  margin: 64px 0 32px 0;
 }
 
 .chamada__img {
   display: flex;
   justify-content: flex-end;
+  flex-direction: column;
 }
 
-ul {
-  display: flex;
-  list-style-type: none;
-  -webkit-margin-before: 0;
-          margin-block-start: 0;
-  -webkit-margin-after: 0;
-          margin-block-end: 0;
-  -webkit-margin-start: 0;
-          margin-inline-start: 0;
-  -webkit-margin-end: 0;
-          margin-inline-end: 0;
-  -webkit-padding-start: 0;
-          padding-inline-start: 0;
+.chamada__img-leg {
+  background-color: #1d1e1f;
+  color: #faf9f2;
 }
 
-.borda {
-  border: 1px solid red;
+.chamada__img-leg2 {
+  background-color: #faf9f2;
+  color: #1d1e1f;
+}
+
+.depo-bg {
+  background-color: #505b80;
+  margin: 80px 0;
+}
+
+.depo {
+  padding: 64px 128px;
+  text-align: center;
+}
+
+.depo__depo {
+  font-size: 1.125rem;
+  line-height: 120%;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  position: relative;
+}
+.depo__depo::before {
+  content: "“";
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 100px;
+  /* identical to box height, or 100% */
+  color: #03060d;
+  opacity: 0.3;
+  position: absolute;
+  top: -1.5rem;
+  left: -2rem;
+}
+
+.depo__name {
+  font-family: "Playfair Display";
+  text-align: right;
+  margin-top: 16px;
+  color: #faf9f2;
 }/*# sourceMappingURL=style.css.map */

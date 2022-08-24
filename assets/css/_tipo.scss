@@ -34,7 +34,8 @@ h4 {
 }
 
 h5 {
-  font-size: 24px;
+  font-size: 16px;
+  padding: $gap2;
 }
 h6 {
   font-size: 18px;
@@ -143,6 +144,9 @@ a {
   font-size: 3rem;
   line-height: 120%;
   color: $grey-dark;
+}
+
+.tit-sec-div {
   &::after {
     content: "";
     position: absolute;
@@ -153,4 +157,9 @@ a {
 
     background-color: $grey-dark;
   }
+}
+
+.txt-base {
+  line-height: 140%;
+  color: $grey-light;
 }

@@ -1,0 +1,57 @@
+// Cores
+
+$bg-light: #faf9f2;
+
+$grey-light: #aaa;
+$grey-dark: #3e3b3b;
+$grey-black: #1d1e1f;
+
+$red-light: #a83e3e;
+$red-normal: #8f2525;
+$red-dark: #3c1e1e;
+
+// Espaçamentos
+
+$gap0: 0px;
+$gap1: 8px;
+$gap2: 16px;
+$gap3: 24px;
+$gap4: 32px;
+$gap5: 48px;
+$gap6: 64px;
+$gap7: 80px;
+$gap8: 96px;
+$gap9: 128px;
+
+// Elementos Base
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto !important;
+}
+
+.divisor {
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    left: -100px;
+    background: $red-normal;
+    transform: translateY(16px);
+  }
+}
+
+.divisor2 {
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 50%;
+    height: 4px;
+    right: 0px;
+    background: $red-normal;
+    transform: translateY(16px);
+  }
+}

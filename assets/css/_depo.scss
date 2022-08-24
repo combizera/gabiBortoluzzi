@@ -1,0 +1,43 @@
+.depo-bg {
+  background-color: #505b80;
+  margin: $gap7 0;
+}
+
+.depo {
+  padding: $gap6 $gap9;
+  text-align: center;
+}
+
+.depo__depo {
+  font-size: 1.125rem;
+  line-height: 120%;
+
+  text-align: center;
+
+  color: rgba(255, 255, 255, 0.7);
+  position: relative;
+
+  &::before {
+    content: "“";
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 100px;
+    /* identical to box height, or 100% */
+
+    color: #03060d;
+
+    opacity: 0.3;
+    position: absolute;
+    top: -1.5rem;
+    left: -2rem;
+  }
+}
+
+.depo__name {
+  font-family: "Playfair Display";
+  text-align: right;
+  margin-top: $gap2;
+
+  color: $bg-light;
+}

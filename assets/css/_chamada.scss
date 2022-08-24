@@ -1,0 +1,61 @@
+// Seção Chamada
+.chamada-bg {
+  background: linear-gradient(90deg, #faf9f2 80%, #8b2424 80%);
+}
+.chamada-bg2 {
+  background: linear-gradient(90deg, #8b2424 20%, #faf9f2 20%);
+}
+
+.chamada {
+  display: grid;
+  grid-template-columns: 66% 34%;
+  padding: $gap6 0;
+}
+.chamada2 {
+  display: grid;
+  grid-template-columns: 34% 66%;
+  padding: $gap6 0;
+}
+
+.chamada__txt {
+  margin-right: 16%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+
+  a {
+    display: inline-flex;
+  }
+  p {
+    margin: $gap6 0 $gap4 0;
+  }
+}
+
+.chamada__txt2 {
+  margin-left: 16%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  a {
+    display: inline-flex;
+  }
+  p {
+    margin: $gap6 0 $gap4 0;
+  }
+}
+
+.chamada__img {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.chamada__img-leg {
+  background-color: $grey-black;
+  color: $bg-light;
+}
+.chamada__img-leg2 {
+  background-color: $bg-light;
+  color: $grey-black;
+}
