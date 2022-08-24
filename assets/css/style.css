@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  font-family: "Playfair Display", serif;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 120%;
+  color: #3c1e1e;
+}
+h1::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 110%;
+  height: 4px;
+  left: -100px;
+  background: #8f2525;
+  transform: translateY(16px);
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 40px;
+}
+
+h4 {
+  font-size: 32px;
+}
+
+h5 {
+  font-size: 24px;
+}
+
+h6 {
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header__link {
+  color: #3c1e1e;
+  transition: 0.3s ease;
+  position: relative;
+}
+.header__link::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 0%;
+  background-color: #3c1e1e;
+  margin-top: 2px;
+  transition: 0.4s;
+}
+.header__link:hover:after {
+  width: 100%;
+  position: absolute;
+}
+
+.btn__pri {
+  padding: 12px 24px;
+  background: #8f2525;
+  border: 2px solid #8f2525;
+  border-radius: 2px;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 120%;
+  color: #faf9f2;
+  transition: 0.4s ease;
+  margin-right: 1rem;
+}
+.btn__pri:hover {
+  background: #6e1a1a;
+  border: 2px solid #6e1a1a;
+}
+
+.btn {
+  padding: 12px 24px;
+  border-radius: 2px;
+  border: 2px solid #a83e3e;
+  overflow: hidden;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 120%;
+  color: #a83e3e;
+  position: relative;
+}
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #a83e3e;
+  z-index: -1;
+  transition: 0.4s ease;
+}
+
+.btn__sec {
+  transition: 0.3s ease;
+}
+.btn__sec::before {
+  width: 0;
+  height: 100%;
+}
+.btn__sec:hover {
+  color: #faf9f2;
+}
+.btn__sec:hover::before {
+  width: 100%;
+}
+
+.txt-apoio {
+  font-weight: 900;
+  font-size: 0.875rem;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #8f2525;
+}
+
+.tit-sec {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  /* identical to box height, or 125% */
+  color: #3e3b3b;
+}
+.tit-sec::after {
+  content: "";
+  position: absolute;
+  bottom: -48px;
+  left: 50%;
+  width: 4px;
+  height: 40px;
+  background-color: #3e3b3b;
+}
+
+body {
+  width: 100%;
+  background-color: #faf9f2;
+  padding-bottom: 10rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto !important;
+}
+
+.header__logo img {
+  max-width: 100%;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__nav ul {
+  gap: 32px;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.hero__txt {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-top: 128px;
+}
+
+.hero__cta {
+  margin-top: 4rem;
+}
+
+.hero__img {
+  display: flex;
+  justify-content: flex-end;
+  padding: 32px 0;
+}
+.hero__img img {
+  filter: drop-shadow(0px 74px 80px rgba(0, 0, 0, 0.14)) drop-shadow(0px 27.0112px 29.2013px rgba(0, 0, 0, 0.0965974)) drop-shadow(0px 13.1134px 14.1767px rgba(0, 0, 0, 0.0778807)) drop-shadow(0px 6.42845px 6.94968px rgba(0, 0, 0, 0.0621193)) drop-shadow(0px 2.54182px 2.74791px rgba(0, 0, 0, 0.0434026));
+}
+
+.areas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 80px 0;
+}
+
+.areas__tit {
+  position: relative;
+}
+
+.areas__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  padding: 80px 0;
+}
+
+.areas__item {
+  background-color: #f6f6f6;
+  padding: 32px;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-margin-start: 0;
+          margin-inline-start: 0;
+  -webkit-margin-end: 0;
+          margin-inline-end: 0;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+
+.borda {
+  border: 1px solid red;
+}/*# sourceMappingURL=style.css.map */
