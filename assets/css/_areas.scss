@@ -45,31 +45,32 @@
     color: $grey-light;
     cursor: default;
   }
-  a {
-    text-align: left;
-    color: $red-dark;
-    display: flex;
-    margin-top: $gap2;
-    position: relative;
-    transition: 0.4s ease;
+}
 
-    &:hover {
-      text-decoration-line: underline;
-      .seta {
-        left: 26%;
-      }
-    }
+.btn-veja-mais {
+  text-align: left;
+  color: $red-dark;
+  display: flex;
+  margin-top: $gap2;
+  position: relative;
+  transition: 0.4s ease;
+
+  &:hover {
+    text-decoration-line: underline;
     .seta {
-      position: absolute;
-      top: -0.5rem;
-      left: 25%;
-      padding: 0.3rem; /* Arrow size */
-      box-shadow: 1px -1px 0 1px $red-dark inset;
-      -webkit-box-shadow: 2px -2px $red-dark inset;
-      border: solid transparent;
-      border-width: 0 0 2rem 2rem;
-      transition: 0.4s ease;
-      transform: rotate(225deg);
+      left: 26%;
     }
+  }
+  .seta {
+    position: absolute;
+    top: -0.5rem;
+    left: 25%;
+    padding: 0.3rem; /* Arrow size */
+    box-shadow: 1px -1px 0 1px $red-dark inset;
+    -webkit-box-shadow: 2px -2px $red-dark inset;
+    border: solid transparent;
+    border-width: 0 0 2rem 2rem;
+    transition: 0.4s ease;
+    transform: rotate(225deg);
   }
 }

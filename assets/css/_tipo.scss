@@ -25,7 +25,25 @@ h2 {
 }
 
 h3 {
-  font-size: 40px;
+  font-weight: 500;
+  font-size: 2.5rem;
+  line-height: 120%;
+  text-align: center;
+
+  color: $grey-dark;
+  position: relative;
+  margin-bottom: 2rem;
+  span {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 4px;
+    left: 50%;
+    bottom: -16px;
+    transform: translateX(-50%);
+
+    background: $red-normal;
+  }
 }
 
 h4 {
@@ -38,32 +56,13 @@ h5 {
   padding: $gap2;
 }
 h6 {
-  font-size: 18px;
+  font-weight: 700;
+  font-size: 24px;
+  color: $red-normal;
 }
 
 a {
   text-decoration: none;
-}
-
-.header__link {
-  color: $red-dark;
-  transition: 0.3s ease;
-  position: relative;
-
-  &::after {
-    content: "";
-    display: block;
-    height: 1px;
-    width: 0%;
-    background-color: $red-dark;
-    margin-top: 2px;
-    transition: 0.4s;
-  }
-
-  &:hover:after {
-    width: 100%;
-    position: absolute;
-  }
 }
 
 .btn__pri {
@@ -112,6 +111,9 @@ a {
 
     transition: 0.4s ease;
   }
+  &:hover {
+    z-index: 1;
+  }
 }
 
 .btn__sec {
@@ -123,7 +125,6 @@ a {
   }
   &:hover {
     color: $bg-light;
-
     &::before {
       width: 100%;
     }

@@ -3,6 +3,27 @@ header {
   justify-content: space-between;
 }
 
+.header__link {
+  color: $red-dark;
+  transition: 0.3s ease;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 0%;
+    background-color: $red-dark;
+    margin-top: 2px;
+    transition: 0.4s;
+  }
+
+  &:hover:after {
+    width: 100%;
+    position: absolute;
+  }
+}
+
 .header__logo img {
   max-width: 100%;
 }
