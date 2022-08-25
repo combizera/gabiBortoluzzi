@@ -74,3 +74,17 @@
     transform: rotate(225deg);
   }
 }
+
+// Mobile
+@media (max-width: 800px) {
+  .areas {
+    padding: $gap5 0;
+  }
+
+  .areas__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $gap4;
+    padding: $gap7 1rem 0 1rem;
+  }
+}

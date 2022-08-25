@@ -28,3 +28,29 @@
       drop-shadow(0px 2.54182px 2.74791px rgba(0, 0, 0, 0.0434026));
   }
 }
+
+// Mobile
+@media (max-width: 800px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero__txt {
+    padding: $gap4 1rem 0 1rem;
+  }
+
+  .hero__cta {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .hero__img {
+    padding-top: $gap2;
+    img {
+      max-width: 100%;
+      transform: scale(0.8);
+    }
+  }
+}

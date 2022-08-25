@@ -64,3 +64,16 @@
   background-color: $bg-light;
   color: $grey-black;
 }
+
+// Mobile
+@media (max-width: 800px) {
+  .chamada {
+    display: none;
+  }
+  .chamada-bg2 {
+    display: none;
+  }
+  .chamada-bg {
+    display: none;
+  }
+}

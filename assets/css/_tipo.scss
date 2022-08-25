@@ -164,3 +164,16 @@ a {
   line-height: 140%;
   color: $grey-light;
 }
+
+// Mobile
+@media (max-width: 800px) {
+  .btn__pri {
+    margin-right: 0rem;
+  }
+  h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 120%;
+    color: $red-dark;
+  }
+}

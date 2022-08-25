@@ -41,3 +41,18 @@
 
   color: $bg-light;
 }
+
+// Mobile
+@media (max-width: 800px) {
+  .depo-bg {
+    margin: $gap5 0;
+  }
+
+  .depo {
+    padding: $gap6 $gap6;
+  }
+
+  .depo__depo {
+    line-height: 150%;
+  }
+}
