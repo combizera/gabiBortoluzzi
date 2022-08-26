@@ -176,4 +176,16 @@ a {
     line-height: 120%;
     color: $red-dark;
   }
+
+  h3 {
+    span {
+      height: 2px;
+    }
+  }
+
+  .tit-sec-div {
+    &::after {
+      width: 2px;
+    }
+  }
 }

@@ -48,6 +48,8 @@
 
   .hero__img {
     padding-top: $gap2;
+    display: flex;
+    justify-content: center !important;
     img {
       max-width: 100%;
       transform: scale(0.8);

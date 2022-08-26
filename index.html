@@ -17,27 +17,27 @@
 </head>
 
 <body>
-
-    <header class="container borda">
-        <div class="header__logo borda"><a href="./index.html">
+    <header id="header" class="container ">
+        <div class="header__logo "><a href="./index.html">
                 <img src="./assets/img/logo.svg" alt="Logotipo Gabriela Bortoluzzi"></a>
         </div>
 
-        <div class="header__nav">
-            <nav>
-                <ul>
-                    <li><a class="header__link" href="#areas-de-atuacao">áreas de atuação</a></li>
-                    <li><a class="header__link" href="#sobre">sobre</a></li>
-                    <li><a class="header__link" href="#contato">contato</a></li>
-                    <li><a class="header__link" href="#blog">blog</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav id="header__nav" aria-label="primária">
+            <button id="btn__mobile" aria-controls="header__menu" aria-expanded="false" aria-haspopup="true" aria-label="Abrir Menu">Menu
+                <span class="hamburguer"></span>
+            </button>
+            <ul class="header__menu" role="menu">
+                <li class="header__nav-item"><a class="header__link" href="#areas-de-atuacao">áreas de atuação</a></li>
+                <li class="header__nav-item"><a class="header__link" href="#sobre">sobre</a></li>
+                <li class="header__nav-item"><a class="header__link" href="#contato">contato</a></li>
+                <li class="header__nav-item"><a class="header__link" href="#blog">blog</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <section class="hero container borda">
-            <div class="hero__txt borda">
+        <section class="hero container " aria-label="Introdução ao site">
+            <div class="hero__txt ">
                 <h1>Este é um texto de destaque</h1>
                 <span class="divisor dv1"></span>
                 <div class="hero__cta">
@@ -45,11 +45,11 @@
                     <a href="#" class="btn btn__sec">conheça o escritório</a>
                 </div>
             </div>
-            <div class="hero__img borda"><img src="./assets/img/hero.png" alt="Foto da advogada Gabriela Bortoluzzi"></div>
+            <div class="hero__img "><img src="./assets/img/hero.png" alt="Foto da advogada Gabriela Bortoluzzi"></div>
         </section>
 
-        <article id="areas-de-atuacao" class="areas borda container">
-            <div class="areas__tit borda">
+        <article id="areas-de-atuacao" class="areas  container" aria-label="Áreas de Atuação">
+            <div class="areas__tit ">
                 <p class="txt-apoio">Experiência Jurídica</p>
                 <h2 class="tit-sec tit-sec-div">Áreas de Atuação</h2>
             </div>
@@ -75,9 +75,9 @@
             </div>
         </article>
 
-        <section class="chamada-bg">
-            <div class="chamada container borda">
-                <div class="chamada__txt borda">
+        <section class="chamada-bg" aria-label="Converse com a especialista">
+            <div class="chamada container">
+                <div class="chamada__txt">
                     <h2 class="tit-sec">Está passando por um momento complicado?</h2>
                     <span class="divisor dv1"></span>
                     <p class="txt-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et pharetra justo. Sed tempus quis arcu a sodales. Maecenas nulla erat, egestas et tortor quis, finibus rhoncus orci. Integer id pretium nulla.</p>
@@ -93,21 +93,21 @@
             </div>
         </section>
 
-        <article id="depoimentos" class="depo-bg">
-            <div class="depo container borda">
+        <article id="depoimentos" class="depo-bg" aria-label="Depoimentos de clientes">
+            <div class="depo container ">
                 <p class="depo__depo">Fui muito bem atendida. Me ouviram e fizeram todo o possível para me auxiliar indico e super recomendo os serviços prestados por vocês. Obrigado pela dedicação que tiveram com minha causa, fiquei muito satisfeita pelo resultado obtido.</p>
                 <p class="depo__name">Nome do cliente. Profissão (?)</p>
             </div>
         </article>
 
-        <section id="sobre" class="chamada-bg2">
-            <div class="chamada2 container borda">
+        <section id="sobre" class="chamada-bg2" aria-label="História do escritório">
+            <div class="chamada2 container ">
                 <div class="chamada__img"><img src="./assets/img/prob.png" alt="Mulher passando por um momento difícil">
                     <div class="chamada__img-leg2">
                         <h5>Um pouco da nossa história</h5>
                     </div>
                 </div>
-                <div class="chamada__txt2 borda">
+                <div class="chamada__txt2 ">
                     <h2 class="tit-sec">Por que os clientes nos escolhem?</h2>
                     <span class="divisor dv2"></span>
                     <p class="txt-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et pharetra justo. Sed tempus quis arcu a sodales. Maecenas nulla erat, egestas et tortor quis, finibus rhoncus orci. Integer id pretium nulla.</p>
@@ -116,8 +116,8 @@
             </div>
         </section>
 
-        <article id="blog" class="areas borda container">
-            <div class="areas__tit borda">
+        <article id="blog" class="areas container" aria-label="Textos do blog">
+            <div class="areas__tit ">
                 <p class="txt-apoio">Conheça nosso blog</p>
                 <h2 class="tit-sec tit-sec-div">Artigos Recentes</h2>
             </div>
@@ -183,9 +183,9 @@
             </div>
         </article>
 
-        <section id="contato" class="chamada-bg">
-            <div class="chamada container borda">
-                <div class="chamada__txt borda">
+        <section id="contato" class="chamada-bg" aria-label="Contato">
+            <div class="chamada container ">
+                <div class="chamada__txt ">
                     <h2 class="tit-sec">Contato</h2>
                     <span class="divisor dv1"></span>
                     <p class="txt-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et pharetra justo. Sed tempus quis arcu a sodales. Maecenas nulla erat, egestas et tortor quis, finibus rhoncus orci. Integer id pretium nulla.</p>
@@ -258,7 +258,7 @@
             </div>
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>

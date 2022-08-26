@@ -212,6 +212,12 @@ a {
     line-height: 120%;
     color: #3c1e1e;
   }
+  h3 span {
+    height: 2px;
+  }
+  .tit-sec-div::after {
+    width: 2px;
+  }
 }
 body {
   width: 100%;
@@ -231,10 +237,6 @@ ul {
           margin-inline-end: 0;
   -webkit-padding-start: 0;
           padding-inline-start: 0;
-}
-
-.borda {
-  border: 1px solid red;
 }
 
 header {
@@ -265,14 +267,98 @@ header {
   max-width: 100%;
 }
 
-.header__nav {
+#header__nav {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.header__nav ul {
+#header__nav ul {
   gap: 32px;
+}
+
+#btn__mobile {
+  display: block;
+}
+
+.header__menu {
+  display: block;
+}
+
+@media (max-width: 800px) {
+  #btn_mobile {
+    display: block;
+  }
+  #btn__mobile {
+    padding: 0.5rem 1rem;
+    display: flex;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #3e3b3b;
+    font-family: "Inter";
+    font-weight: bold;
+  }
+}
+#header__nav {
+  margin-right: 0vw;
+  font-family: "Inter", sans-serif;
+  color: #3e3b3b;
+  font-size: 1.25rem;
+}
+
+.header__nav-item {
+  margin-left: 0rem;
+  padding: 0rem;
+}
+
+.header__nav-item:hover {
+  background-color: tomato;
+  color: #3e3b3b;
+  transition: 0.3s;
+  border-radius: 4px;
+}
+
+#header__nav.active .header__menu {
+  visibility: visible;
+  height: calc(46vh - 50px);
+  overflow-y: auto;
+}
+
+.header__menu li {
+  margin: 0.5rem 0rem;
+}
+
+.hamburguer {
+  display: block;
+  border-top: 2px solid;
+  width: 20px;
+  margin-left: 5px;
+}
+
+.hamburguer::after,
+.hamburguer::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: currentColor;
+  margin-top: 5px;
+  transition: 0.3s;
+  position: relative;
+}
+
+#header__nav.active .hamburguer {
+  border-top-color: transparent;
+}
+
+#header__nav.active .hamburguer::after {
+  transform: rotate(-135deg);
+  top: -7px;
+}
+
+#header__nav.active .hamburguer::before {
+  transform: rotate(135deg);
 }
 
 .hero {
@@ -315,6 +401,8 @@ header {
   }
   .hero__img {
     padding-top: 16px;
+    display: flex;
+    justify-content: center !important;
   }
   .hero__img img {
     max-width: 100%;
@@ -475,7 +563,7 @@ header {
   }
   .chamada2 {
     grid-template-columns: 1fr;
-    padding: 48px 0;
+    padding: 1rem;
   }
   .chamada__txt {
     margin: 4rem 0 0 0;
@@ -847,6 +935,7 @@ p {
     text-align: center;
   }
   .footer__tit {
+    margin-top: 1rem;
     margin-bottom: 16px;
     font-size: 1.25rem;
   }
