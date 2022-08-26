@@ -51,7 +51,7 @@ $gap9: 128px;
 
 .dv2 {
   &::after {
-    width: 50%;
+    width: 55%;
     right: 0px;
   }
 }
@@ -82,5 +82,28 @@ $gap9: 128px;
 
   .dv3 {
     display: none;
+  }
+}
+
+// Telas Grandes
+@media (min-width: 1400px) {
+  .divisor {
+    &::after {
+      height: 4px;
+    }
+  }
+  .dv1 {
+    &::after {
+      width: 90%;
+      left: 00px;
+    }
+  }
+
+  .dv2 {
+    &::after {
+      width: 30%;
+      right: 40%;
+      transform: translate(50%, 1rem);
+    }
   }
 }

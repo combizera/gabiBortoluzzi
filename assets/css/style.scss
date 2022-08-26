@@ -5,6 +5,23 @@
   scroll-behavior: smooth;
 }
 
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+h6::selection,
+label::selection,
+p::selection {
+  background-color: #a83e3e;
+  color: #faf9f2;
+}
+
+footer p::selection {
+  background-color: #faf9f2;
+  color: #a83e3e;
+}
+
 @import "./_base.scss";
 @import "./_tipo.scss";
 
@@ -31,3 +48,4 @@ ul {
 @import "./_blog.scss";
 @import "./_contato.scss";
 @import "./_footer.scss";
+@import "./_artigos.scss";

@@ -5,11 +5,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./../assets/css/style.css">
   <title>Direito da Família</title>
 
   <!-- Favicon -->
-  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="./../favicon.ico" type="image/x-icon">
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +17,121 @@
 </head>
 
 <body>
+  <div class="artigo__grid">
+    <div class="artigo__capsula">
+      <header id="header" class="container ">
+        <div class="header__logo "><a href="./index.html">
+            <img src="./../assets/img/logo.svg" alt="Logotipo Gabriela Bortoluzzi"></a>
+        </div>
 
+        <nav id="header__nav" aria-label="primária">
+          <button id="btn__mobile" aria-controls="header__menu" aria-expanded="false" aria-haspopup="true" aria-label="Abrir Menu">Menu
+            <span class="hamburguer"></span>
+          </button>
+          <ul id="header__menu" class="header__menu" role="menu">
+            <li class="header__nav-item"><a class="header__link" href="#areas-de-atuacao">áreas de atuação</a></li>
+            <li class="header__nav-item"><a class="header__link" href="#sobre">sobre</a></li>
+            <li class="header__nav-item"><a class="header__link" href="#contato">contato</a></li>
+            <li class="header__nav-item"><a class="header__link" href="#artigo">artigo</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <h3>Título do artigo</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et pharetra justo. Sed tempus quis arcu a sodales. Maecenas nulla erat, egestas et tortor quis, finibus rhoncus orci. Integer id pretium nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et pharetra justo. Sed tempus quis arcu a sodales. Maecenas nulla erat, egestas et tortor quis, finibus rhoncus orci. Integer id pretium nulla.</p>
+      </main>
+    </div>
+
+    <aside>
+      <div class="artigo__perfil">
+        <div class="artigo__perfil-gabi">
+          <img src="./../assets/img/gabi2.jpg" alt="Advogada Gabriela Bortoluzzi">
+        </div>
+        <p>Gabriela Bortoluzzi</p>
+        <p class="artigo__perfil-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et pharetra justo. Sed tempus quis arcu a sodales. Maecenas nulla erat, egestas et tortor quis, finibus rhoncus orci. Integer id pretium nulla.</p>
+        <div class="artigo__perfil-btns"><a href=""></a><a href=""></a><a href=""></a></div>
+      </div>
+
+      <div class="artigos__textos">
+        <p class="artigos__textos-tit">Leia mais textos</p>
+        <div>
+          <span>Direitos da Família</span>
+          <p>Título do texto</p>
+          <img src="./../assets/img/exemplo.svg" alt="">
+        </div>
+        <div>
+          <span>Direitos da Família</span>
+          <p>Título do texto</p>
+          <img src="./../assets/img/exemplo.svg" alt="">
+        </div>
+        <div>
+          <span>Direitos da Família</span>
+          <p>Título do texto</p>
+          <img src="./../assets/img/exemplo.svg" alt="">
+        </div>
+      </div>
+    </aside>
+  </div>
+  <footer class="bg-footer">
+    <div class="container">
+      <span class="divisor dv3"></span>
+      <div class="footer__grid">
+        <div class="footer__item footer__mapa">
+          <p class="footer__tit">Mapa do site</p>
+          <ul>
+            <li><a href="./">Início</a></li>
+            <li><a href="#areas-de-atuacao">Áreas de Atuação</a></li>
+            <li><a href="#depoimentos">Depoimentos</a></li>
+            <li><a href="#sobre">Sobre nós</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer__item footer__sociais">
+          <p class="footer__tit">Redes Sociais</p>
+          <ul>
+            <li>
+              <a href="instagram.com">
+                <img src="./../assets/img/instagram.svg" alt="Botão para conhecer o Instagram">
+                <p>@bortoluzziadv</p>
+              </a>
+            </li>
+            <li>
+              <a href="zap">
+                <img src="./../assets/img/whatsapp.svg" alt="Botão para chamar no Whatsapp">
+                <p>(54) 8137-5105</p>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:">
+                <img src="./../assets/img/email.svg" alt="Botão para enviar email">
+                <p>ola@bortoluzziadvocacia.com.br</p>
+              </a>
+            </li>
+            <li>
+              <a href="solary.tech">
+                <img src="./../assets/img/code.svg" alt="Botão para enviar email">
+                <p>Site desenvolvido por Solary</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__item footer__end">
+          <p class="footer__tit">Contato</p>
+          <ul>
+            <li>
+              <a href="https://www.google.com/maps/place/Gabriela+Broilo+Bortoluzzi+Advogada+-+Direito+de+Fam%C3%ADlia,+Civil+e+Consumidor/@-29.1663877,-51.181155,17z/data=!3m1!4b1!4m5!3m4!1s0x951ebccfc1a938c1:0xf509ef79f3976737!8m2!3d-29.1663877!4d-51.1789663">
+                <img src="./../assets/img/map.svg" alt="Localização do escritório">
+                <p>R. Marquês do Herval, 1115 - Sala 802 - Centro, Caxias do Sul</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="./../script.js"></script>
 </body>
 
 </html>

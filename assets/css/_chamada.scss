@@ -105,3 +105,25 @@
     }
   }
 }
+
+// Telas Grandes
+@media (min-width: 1400px) {
+  .chamada-bg {
+    background: linear-gradient(
+      90deg,
+      #faf9f2 70%,
+      #892323 70%,
+      #872222 85%,
+      #faf9f2 85%
+    );
+  }
+  .chamada-bg2 {
+    background: linear-gradient(
+      90deg,
+      #faf9f2 15%,
+      #892323 15%,
+      #872222 30%,
+      #faf9f2 30%
+    );
+  }
+}
