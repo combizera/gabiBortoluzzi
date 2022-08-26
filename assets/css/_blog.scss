@@ -88,7 +88,6 @@
 
     color: $grey-light;
     display: block;
-    margin-bottom: 1rem;
   }
   .testee {
     position: relative;
@@ -99,11 +98,26 @@
     border: none;
     padding: 0.6rem 1rem;
     border-radius: 2px 0 0 2px;
+    background-color: #fff;
+    border: 2px solid rgb(220, 220, 220);
+    margin: 0.5rem 0;
+    color: #aaa;
+    transition: 0.3s;
+
+    &:focus {
+      outline: none;
+      border: 2px solid $red-normal;
+      box-shadow: 0 0 0 2px #ab252580;
+      & + #btn-insc {
+        border: 2px solid $red-normal;
+      }
+    }
   }
   button {
     cursor: pointer;
     position: absolute;
     top: 0;
+    margin: 0.5rem 0;
     right: 0;
 
     font-family: "Playfair Display", serif;
@@ -113,7 +127,10 @@
     color: $bg-light;
     padding: 0.5rem 2rem;
     background-color: $red-normal;
-    border: none;
+    border: 2px solid rgb(220, 220, 220);
+    border-left: 0px;
+    transition: 0.3s;
+
     border-radius: 0 2px 2px 0;
   }
 }
@@ -121,8 +138,6 @@
 .blog__check {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-top: 1rem;
 
   input {
     width: 15px;

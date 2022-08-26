@@ -67,13 +67,41 @@
 
 // Mobile
 @media (max-width: 800px) {
-  .chamada {
-    display: none;
+  .chamada-bg {
+    background: none;
   }
   .chamada-bg2 {
-    display: none;
+    background: none;
   }
-  .chamada-bg {
-    display: none;
+
+  .chamada {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+  .chamada2 {
+    grid-template-columns: 1fr;
+    padding: $gap5 0;
+  }
+
+  .chamada__txt {
+    margin: 4rem 0 0 0;
+    p {
+      margin: $gap4 0;
+    }
+  }
+
+  .chamada__txt2 {
+    margin: 4rem 0 0 0;
+    p {
+      margin: $gap4 0;
+    }
+  }
+
+  .chamada__img {
+    grid-row: 1;
+    img {
+      height: 200px;
+      object-fit: cover;
+    }
   }
 }

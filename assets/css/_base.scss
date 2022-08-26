@@ -36,23 +36,51 @@ $gap9: 128px;
     content: "";
     display: block;
     position: absolute;
-    width: 100%;
     height: 4px;
-    left: -100px;
     background: $red-normal;
     transform: translateY(16px);
   }
 }
 
-.divisor2 {
+.dv1 {
   &::after {
-    content: "";
-    display: block;
-    position: absolute;
+    width: 100%;
+    left: -100px;
+  }
+}
+
+.dv2 {
+  &::after {
     width: 50%;
-    height: 4px;
     right: 0px;
-    background: $red-normal;
-    transform: translateY(16px);
+  }
+}
+
+.dv3 {
+  &::after {
+    width: 70%;
+    top: 3rem;
+    left: 0;
+    background: $bg-light !important;
+  }
+}
+
+// Mobile
+@media (max-width: 800px) {
+  .divisor {
+    &::after {
+      height: 2px;
+    }
+  }
+
+  .dv2 {
+    &::after {
+      width: 100%;
+      left: -100px;
+    }
+  }
+
+  .dv3 {
+    display: none;
   }
 }

@@ -1,0 +1,145 @@
+footer {
+  background-color: $red-normal;
+  position: relative;
+  color: $bg-normal;
+
+  ul {
+    display: inline;
+
+    a {
+      color: inherit;
+      transition: 0.4s;
+      font-family: "Inter", sans-serif;
+      font-size: 0.875rem;
+      line-height: 170%;
+      padding: 0.5rem;
+      &:hover {
+        margin-left: 0.25rem;
+        color: $bg-light;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+.footer__sociais {
+  a {
+    display: inline-flex;
+    padding: 0rem;
+
+    &:hover {
+      font-weight: 400;
+    }
+  }
+  p {
+    margin-left: 0.5rem;
+  }
+
+  li {
+    &:nth-child(4) {
+      background-color: #6b1313;
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+      margin-left: -0.5rem;
+      display: inline-flex;
+      a {
+        transition: 0.4s;
+        &:hover {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+.footer__end {
+  a {
+    color: inherit;
+    transition: 0.4s;
+    display: inline-flex;
+    padding: 0rem;
+    line-height: 120%;
+
+    &:hover {
+      margin-left: 0rem;
+      color: $bg-light;
+      font-weight: 400;
+    }
+  }
+}
+p {
+  margin-left: 0.5rem;
+}
+
+.footer__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: $gap4;
+  width: 70%;
+  margin: 0 !important;
+}
+
+.footer__tit {
+  color: $bg-light !important;
+  margin-bottom: $gap4;
+}
+
+// Mobile
+@media (max-width: 800px) {
+  footer {
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    li {
+      margin-bottom: 1rem;
+    }
+    a {
+      padding: 0.5rem;
+      background-color: $red-light;
+      border-radius: 4px;
+      font-size: 1rem !important;
+      margin: 0.5rem;
+    }
+  }
+
+  .footer__sociais {
+    a {
+      padding: 0.5rem;
+    }
+    li {
+      &:nth-child(4) {
+        background-color: initial;
+        padding: 0rem;
+        border-radius: 4px;
+        margin: 0rem !important;
+        a {
+          transition: 0.4s;
+          &:hover {
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+
+  .footer__end {
+    a {
+      transition: 0.4s;
+      padding: 0.5rem;
+    }
+  }
+
+  .footer__grid {
+    grid-template-columns: 1fr;
+    padding: 3rem 1rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer__tit {
+    margin-bottom: $gap2;
+    font-size: 1.25rem;
+  }
+}

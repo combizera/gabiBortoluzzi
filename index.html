@@ -19,17 +19,17 @@
 <body>
 
     <header class="container borda">
-        <div class="header__logo borda"><a href="#">
+        <div class="header__logo borda"><a href="./index.html">
                 <img src="./assets/img/logo.svg" alt="Logotipo Gabriela Bortoluzzi"></a>
         </div>
 
         <div class="header__nav">
             <nav>
                 <ul>
-                    <li><a href="#" class="header__link">áreas de atuação</a></li>
-                    <li><a class="header__link" href="#">sobre</a></li>
-                    <li><a class="header__link" href="#">contato</a></li>
-                    <li><a class="header__link" href="#">blog</a></li>
+                    <li><a class="header__link" href="#areas-de-atuacao">áreas de atuação</a></li>
+                    <li><a class="header__link" href="#sobre">sobre</a></li>
+                    <li><a class="header__link" href="#contato">contato</a></li>
+                    <li><a class="header__link" href="#blog">blog</a></li>
                 </ul>
             </nav>
         </div>
@@ -39,7 +39,7 @@
         <section class="hero container borda">
             <div class="hero__txt borda">
                 <h1>Este é um texto de destaque</h1>
-                <span class="divisor"></span>
+                <span class="divisor dv1"></span>
                 <div class="hero__cta">
                     <a href="#" class="btn__pri">conversar com Gabriela</a>
                     <a href="#" class="btn btn__sec">conheça o escritório</a>
@@ -48,7 +48,7 @@
             <div class="hero__img borda"><img src="./assets/img/hero.png" alt="Foto da advogada Gabriela Bortoluzzi"></div>
         </section>
 
-        <article class="areas borda container">
+        <article id="areas-de-atuacao" class="areas borda container">
             <div class="areas__tit borda">
                 <p class="txt-apoio">Experiência Jurídica</p>
                 <h2 class="tit-sec tit-sec-div">Áreas de Atuação</h2>
@@ -75,11 +75,11 @@
             </div>
         </article>
 
-        <div class="chamada-bg">
-            <section class="chamada container borda">
+        <section class="chamada-bg">
+            <div class="chamada container borda">
                 <div class="chamada__txt borda">
                     <h2 class="tit-sec">Está passando por um momento complicado?</h2>
-                    <span class="divisor"></span>
+                    <span class="divisor dv1"></span>
                     <p class="txt-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et pharetra justo. Sed tempus quis arcu a sodales. Maecenas nulla erat, egestas et tortor quis, finibus rhoncus orci. Integer id pretium nulla.</p>
                     <div>
                         <a href="#" class="btn btn__sec">converse conosco</a>
@@ -90,17 +90,18 @@
                         <h5>Divórcio & Família</h5>
                     </div>
                 </div>
-            </section>
-        </div>
-        <div class="depo-bg">
-            <section class="depo container borda">
+            </div>
+        </section>
+
+        <article id="depoimentos" class="depo-bg">
+            <div class="depo container borda">
                 <p class="depo__depo">Fui muito bem atendida. Me ouviram e fizeram todo o possível para me auxiliar indico e super recomendo os serviços prestados por vocês. Obrigado pela dedicação que tiveram com minha causa, fiquei muito satisfeita pelo resultado obtido.</p>
                 <p class="depo__name">Nome do cliente. Profissão (?)</p>
-            </section>
-        </div>
+            </div>
+        </article>
 
-        <div class="chamada-bg2">
-            <section class="chamada2 container borda">
+        <section id="sobre" class="chamada-bg2">
+            <div class="chamada2 container borda">
                 <div class="chamada__img"><img src="./assets/img/prob.png" alt="Mulher passando por um momento difícil">
                     <div class="chamada__img-leg2">
                         <h5>Um pouco da nossa história</h5>
@@ -108,17 +109,17 @@
                 </div>
                 <div class="chamada__txt2 borda">
                     <h2 class="tit-sec">Por que os clientes nos escolhem?</h2>
-                    <span class="divisor2"></span>
+                    <span class="divisor dv2"></span>
                     <p class="txt-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et pharetra justo. Sed tempus quis arcu a sodales. Maecenas nulla erat, egestas et tortor quis, finibus rhoncus orci. Integer id pretium nulla.</p>
                     <a href="#" class="btn btn__sec">converse conosco</a>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
 
-        <article class="areas borda container">
+        <article id="blog" class="areas borda container">
             <div class="areas__tit borda">
                 <p class="txt-apoio">Conheça nosso blog</p>
-                <h2 class="tit-sec tit-sec-div">Áreas de Atuação</h2>
+                <h2 class="tit-sec tit-sec-div">Artigos Recentes</h2>
             </div>
 
             <div class="blog__grid">
@@ -132,10 +133,9 @@
                             <p>JUL. 2022</p>
                         </div>
                         <p class="blog__txt">A alienação parental pode ser caracterizada por muitos atos, incluindo:Impedir ou dificultar o contado dos filhos com o outro genitorCaluniar o outro genitor, deixando a criança/adolescente em conflito com os sentimentos que sentem pelos pais</p>
-                        <a class="btn-veja-mais" href="">veja mais<span class="seta"></span></a>
+                        <a class="btn-veja-mais" href="./blog/direito-da-familia.html">veja mais<span class="seta"></span></a>
                     </div>
                 </div>
-
                 <div class="blog__item">
                     <div class="blog__img">
                     </div>
@@ -164,24 +164,100 @@
                 </div>
             </div>
             <div class="blog__newsletter">
-                <h3>Não perca uma postagem<span></span></h3>
-
+                <h3>Não perca nenhuma postagem<span></span></h3>
                 <div class="blog__input">
                     <form class="blog__form" action="./" method="POST">
+
                         <label for="news-email">Inscreva-se para que possamos enviar emails sempre que tiver conteúdo novo ou asdsadadkjdkk</label>
+
                         <div class="testee">
                             <input id="news-email" type="email" name="news-email" placeholder="Insira aqui seu melhor e-mail" required>
-                            <button>Inscrever</button>
-                        </div>
-                        <div class="blog__check">
-                            <input type="checkbox" id="termos" name="termos">
-                            <label for="termos">Eu aceito receber e-mails</label>
+                            <button id="btn-insc">Inscrever</button>
+                            <div class="blog__check">
+                                <input type="checkbox" id="termos" name="termos">
+                                <label for="termos">Eu aceito receber e-mails</label>
+                            </div>
                         </div>
                     </form>
                 </div>
             </div>
         </article>
+
+        <section id="contato" class="chamada-bg">
+            <div class="chamada container borda">
+                <div class="chamada__txt borda">
+                    <h2 class="tit-sec">Contato</h2>
+                    <span class="divisor dv1"></span>
+                    <p class="txt-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et pharetra justo. Sed tempus quis arcu a sodales. Maecenas nulla erat, egestas et tortor quis, finibus rhoncus orci. Integer id pretium nulla.</p>
+                    <div>
+                        <a href="#" class="btn btn__sec">converse conosco</a>
+                    </div>
+                </div>
+                <div class="chamada__img"><img src="./assets/img/prob.png" alt="Mulher passando por um momento difícil">
+                    <div class="chamada__img-leg">
+                        <h5>Venha tomar um café</h5>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <footer>
+        <span class="divisor dv3"></span>
+        <div class="footer__grid container">
+            <div class="footer__item footer__mapa">
+                <p class="footer__tit">Mapa do site</p>
+                <ul>
+                    <li><a href="./">Início</a></li>
+                    <li><a href="#areas-de-atuacao">Áreas de Atuação</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
+                    <li><a href="#sobre">Sobre nós</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer__item footer__sociais">
+                <p class="footer__tit">Redes Sociais</p>
+                <ul>
+                    <li>
+                        <a href="instagram.com">
+                            <img src="./assets/img/instagram.svg" alt="Botão para conhecer o Instagram">
+                            <p>@bortoluzziadv</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="zap">
+                            <img src="./assets/img/whatsapp.svg" alt="Botão para chamar no Whatsapp">
+                            <p>(54) 8137-5105</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:">
+                            <img src="./assets/img/email.svg" alt="Botão para enviar email">
+                            <p>ola@bortoluzziadvocacia.com.br</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="solary.tech">
+                            <img src="./assets/img/code.svg" alt="Botão para enviar email">
+                            <p>Site desenvolvido por Solary</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__item footer__end">
+                <p class="footer__tit">Contato</p>
+                <ul>
+                    <li>
+                        <a href="https://www.google.com/maps/place/Gabriela+Broilo+Bortoluzzi+Advogada+-+Direito+de+Fam%C3%ADlia,+Civil+e+Consumidor/@-29.1663877,-51.181155,17z/data=!3m1!4b1!4m5!3m4!1s0x951ebccfc1a938c1:0xf509ef79f3976737!8m2!3d-29.1663877!4d-51.1789663">
+                            <img src="./assets/img/map.svg" alt="Localização do escritório">
+                            <p>R. Marquês do Herval, 1115 - Sala 802 - Centro, Caxias do Sul</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 
