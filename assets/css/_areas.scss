@@ -1,5 +1,4 @@
 // Seção Áreas de Atuação
-
 .areas {
   display: flex;
   flex-direction: column;
@@ -77,6 +76,9 @@
 
 // Mobile
 @media (max-width: 800px) {
+  #areas-de-atuacao {
+    margin-bottom: 7rem !important;
+  }
   .areas {
     padding: $gap5 0;
   }

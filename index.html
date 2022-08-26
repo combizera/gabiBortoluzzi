@@ -26,7 +26,7 @@
             <button id="btn__mobile" aria-controls="header__menu" aria-expanded="false" aria-haspopup="true" aria-label="Abrir Menu">Menu
                 <span class="hamburguer"></span>
             </button>
-            <ul class="header__menu" role="menu">
+            <ul id="header__menu" class="header__menu" role="menu">
                 <li class="header__nav-item"><a class="header__link" href="#areas-de-atuacao">áreas de atuação</a></li>
                 <li class="header__nav-item"><a class="header__link" href="#sobre">sobre</a></li>
                 <li class="header__nav-item"><a class="header__link" href="#contato">contato</a></li>
@@ -188,10 +188,17 @@
                 <div class="chamada__txt ">
                     <h2 class="tit-sec">Contato</h2>
                     <span class="divisor dv1"></span>
-                    <p class="txt-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et pharetra justo. Sed tempus quis arcu a sodales. Maecenas nulla erat, egestas et tortor quis, finibus rhoncus orci. Integer id pretium nulla.</p>
-                    <div>
-                        <a href="#" class="btn btn__sec">converse conosco</a>
-                    </div>
+                    <form class="blog__form" action="./" method="POST">
+                        <h6>Tire suas dúvidas</h6>
+                        <label for="contato-nome">Nome</label>
+                        <input placeholder="Nome Completo" id="contato-nome" type="text">
+                        <label for="contato-email">Email</label>
+                        <input placeholder="Seu melhor email" id="contato-email" type="email">
+                        <label for="contato-mensagem">Mensagem</label>
+                        <textarea name="contato-mensagem" id="contato-mensagem" rows="5"></textarea>
+
+                        <button type="submit">Enviar Mensagem</button>
+                    </form>
                 </div>
                 <div class="chamada__img"><img src="./assets/img/prob.png" alt="Mulher passando por um momento difícil">
                     <div class="chamada__img-leg">
@@ -202,59 +209,61 @@
         </section>
     </main>
 
-    <footer>
-        <span class="divisor dv3"></span>
-        <div class="footer__grid container">
-            <div class="footer__item footer__mapa">
-                <p class="footer__tit">Mapa do site</p>
-                <ul>
-                    <li><a href="./">Início</a></li>
-                    <li><a href="#areas-de-atuacao">Áreas de Atuação</a></li>
-                    <li><a href="#depoimentos">Depoimentos</a></li>
-                    <li><a href="#sobre">Sobre nós</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </div>
-            <div class="footer__item footer__sociais">
-                <p class="footer__tit">Redes Sociais</p>
-                <ul>
-                    <li>
-                        <a href="instagram.com">
-                            <img src="./assets/img/instagram.svg" alt="Botão para conhecer o Instagram">
-                            <p>@bortoluzziadv</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="zap">
-                            <img src="./assets/img/whatsapp.svg" alt="Botão para chamar no Whatsapp">
-                            <p>(54) 8137-5105</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="mailto:">
-                            <img src="./assets/img/email.svg" alt="Botão para enviar email">
-                            <p>ola@bortoluzziadvocacia.com.br</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="solary.tech">
-                            <img src="./assets/img/code.svg" alt="Botão para enviar email">
-                            <p>Site desenvolvido por Solary</p>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer__item footer__end">
-                <p class="footer__tit">Contato</p>
-                <ul>
-                    <li>
-                        <a href="https://www.google.com/maps/place/Gabriela+Broilo+Bortoluzzi+Advogada+-+Direito+de+Fam%C3%ADlia,+Civil+e+Consumidor/@-29.1663877,-51.181155,17z/data=!3m1!4b1!4m5!3m4!1s0x951ebccfc1a938c1:0xf509ef79f3976737!8m2!3d-29.1663877!4d-51.1789663">
-                            <img src="./assets/img/map.svg" alt="Localização do escritório">
-                            <p>R. Marquês do Herval, 1115 - Sala 802 - Centro, Caxias do Sul</p>
-                        </a>
-                    </li>
-                </ul>
+    <footer class="bg-footer">
+        <div class="container">
+            <span class="divisor dv3"></span>
+            <div class="footer__grid">
+                <div class="footer__item footer__mapa">
+                    <p class="footer__tit">Mapa do site</p>
+                    <ul>
+                        <li><a href="./">Início</a></li>
+                        <li><a href="#areas-de-atuacao">Áreas de Atuação</a></li>
+                        <li><a href="#depoimentos">Depoimentos</a></li>
+                        <li><a href="#sobre">Sobre nós</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer__item footer__sociais">
+                    <p class="footer__tit">Redes Sociais</p>
+                    <ul>
+                        <li>
+                            <a href="instagram.com">
+                                <img src="./assets/img/instagram.svg" alt="Botão para conhecer o Instagram">
+                                <p>@bortoluzziadv</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="zap">
+                                <img src="./assets/img/whatsapp.svg" alt="Botão para chamar no Whatsapp">
+                                <p>(54) 8137-5105</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:">
+                                <img src="./assets/img/email.svg" alt="Botão para enviar email">
+                                <p>ola@bortoluzziadvocacia.com.br</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="solary.tech">
+                                <img src="./assets/img/code.svg" alt="Botão para enviar email">
+                                <p>Site desenvolvido por Solary</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__item footer__end">
+                    <p class="footer__tit">Contato</p>
+                    <ul>
+                        <li>
+                            <a href="https://www.google.com/maps/place/Gabriela+Broilo+Bortoluzzi+Advogada+-+Direito+de+Fam%C3%ADlia,+Civil+e+Consumidor/@-29.1663877,-51.181155,17z/data=!3m1!4b1!4m5!3m4!1s0x951ebccfc1a938c1:0xf509ef79f3976737!8m2!3d-29.1663877!4d-51.1789663">
+                                <img src="./assets/img/map.svg" alt="Localização do escritório">
+                                <p>R. Marquês do Herval, 1115 - Sala 802 - Centro, Caxias do Sul</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </footer>

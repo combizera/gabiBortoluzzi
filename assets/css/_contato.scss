@@ -1,0 +1,39 @@
+#contato {
+  font-family: "Inter", sans-serif;
+  margin-left: 1rem;
+  form {
+    width: 50%;
+  }
+  h6 {
+    margin: 2rem 0;
+  }
+  label {
+    color: $grey-dark;
+    font-weight: 400;
+  }
+
+  input::placeholder {
+    color: $grey-light;
+    font-weight: 200;
+    font-family: "Inter", sans-serif;
+  }
+
+  button {
+    display: flex;
+    position: unset;
+    margin: 0.5rem 0;
+  }
+}
+
+// Mobile
+@media (max-width: 800px) {
+  #contato {
+    form {
+      width: 100%;
+    }
+    button {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+}

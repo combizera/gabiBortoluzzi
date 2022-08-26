@@ -15,8 +15,8 @@ function toggleMenu(event) {
   }
 }
 
-// btnMobile.addEventListener("click", toggleMenu);
-// btnMobile.addEventListener("touchstart", toggleMenu);
+btnMobile.addEventListener("click", toggleMenu);
+btnMobile.addEventListener("touchstart", toggleMenu);
 
 // function inscreveu() {
 //   var name = document.getElementById("inputName").value;
