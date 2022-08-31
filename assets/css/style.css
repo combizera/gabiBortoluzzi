@@ -107,7 +107,7 @@ p {
 h1 {
   font-family: "Playfair Display";
   font-weight: 700;
-  font-size: 4rem;
+  font-size: 3rem;
   line-height: 120%;
   color: #3c1e1e;
 }
@@ -527,6 +527,26 @@ header {
     padding: 80px 1rem 0 1rem;
   }
 }
+.txt-more {
+  max-height: 95px;
+  overflow: hidden;
+  position: relative;
+  transition: max-height 0.4s ease;
+}
+
+.overflow {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30px;
+}
+
+.overflow[data-state=visible] {
+  display: block;
+}
+
 .chamada-bg {
   background: linear-gradient(90deg, #faf9f2 80%, #8b2424 80%);
 }
@@ -930,6 +950,11 @@ footer ul a:hover {
   font-weight: 700;
 }
 
+#footer-reds,
+#footer-cnt {
+  margin-left: 0rem !important;
+}
+
 .footer__sociais a {
   display: inline-flex;
   padding: 0rem;
@@ -1032,7 +1057,7 @@ p {
   }
 }
 aside {
-  padding: 1.25rem;
+  padding: 1.25rem 0 1.25rem 1.25rem;
   border-left: 1px solid #aaa;
   margin-left: 1.25rem;
 }
@@ -1114,4 +1139,40 @@ aside p {
   font-size: 1.125rem !important;
   color: #3e3b3b !important;
   margin: 2rem 0 1rem 0 !important;
+}
+
+.artigo-titulo {
+  font-weight: 700;
+  line-height: 120%;
+  color: #8f2525;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.artigo-subtitulo {
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: #aaa;
+  margin-left: 0;
+}
+
+.artigo-conteudo {
+  margin-top: 3rem;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 140%;
+  color: #aaa;
+}
+
+.artigo-ft {
+  max-height: 400px;
+  width: 80%;
+  margin: 3rem auto 0 auto !important;
+  overflow: hidden;
+}
+.artigo-ft img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  max-width: 100%;
 }/*# sourceMappingURL=style.css.map */

@@ -1,5 +1,5 @@
 aside {
-  padding: 1.25rem;
+  padding: 1.25rem 0 1.25rem 1.25rem;
   border-left: 1px solid $grey-light;
   margin-left: 1.25rem;
   p {
@@ -85,4 +85,42 @@ aside {
 
   color: $grey-dark !important;
   margin: 2rem 0 1rem 0 !important;
+}
+
+.artigo-titulo {
+  font-weight: 700;
+  line-height: 120%;
+  color: $red-normal;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.artigo-subtitulo {
+  font-weight: 500;
+  font-size: 1.25rem;
+
+  color: $grey-light;
+  margin-left: 0;
+}
+
+.artigo-conteudo {
+  margin-top: 3rem;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 140%;
+
+  color: $grey-light;
+}
+
+.artigo-ft {
+  max-height: 400px;
+  width: 80%;
+  margin: 3rem auto 0 auto !important;
+  overflow: hidden;
+  img {
+    object-fit: cover;
+    display: block;
+
+    max-width: 100%;
+  }
 }

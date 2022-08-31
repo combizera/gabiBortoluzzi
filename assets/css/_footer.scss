@@ -21,6 +21,10 @@ footer {
     }
   }
 }
+#footer-reds,
+#footer-cnt {
+  margin-left: 0rem !important;
+}
 
 .footer__sociais {
   a {
@@ -31,6 +35,7 @@ footer {
       font-weight: 400;
     }
   }
+
   p {
     margin-left: 0.5rem;
   }
