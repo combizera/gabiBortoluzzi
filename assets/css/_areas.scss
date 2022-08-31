@@ -91,22 +91,22 @@
   }
 }
 
-.txt-more {
-  max-height: 95px;
-  overflow: hidden;
-  position: relative;
-  transition: max-height 0.4s ease;
-}
-
-.overflow {
+.morecontent span {
   display: none;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 30px;
 }
-
-.overflow[data-state="visible"] {
+.morelink {
   display: block;
+  text-align: left;
+  color: $red-dark;
+  display: flex;
+  margin-top: $gap2;
+  position: relative;
+  transition: 0.4s ease;
+
+  &:hover {
+    text-decoration-line: underline;
+    .seta {
+      left: 26%;
+    }
+  }
 }
