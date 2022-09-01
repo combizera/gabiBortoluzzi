@@ -967,17 +967,17 @@ footer ul a:hover {
 .footer__sociais p {
   margin-left: 0.5rem;
 }
-.footer__sociais li:nth-child(4) {
+.footer__sociais li:nth-child(5) {
   background-color: #6b1313;
   padding: 0.25rem 0.5rem;
   border-radius: 4px;
   margin-left: -0.5rem;
   display: inline-flex;
 }
-.footer__sociais li:nth-child(4) a {
+.footer__sociais li:nth-child(5) a {
   transition: 0.4s;
 }
-.footer__sociais li:nth-child(4) a:hover {
+.footer__sociais li:nth-child(5) a:hover {
   font-weight: 700;
 }
 
@@ -1030,16 +1030,16 @@ p {
   .footer__sociais a {
     padding: 0.5rem;
   }
-  .footer__sociais li:nth-child(4) {
+  .footer__sociais li:nth-child(5) {
     background-color: initial;
     padding: 0rem;
     border-radius: 4px;
     margin: 0rem !important;
   }
-  .footer__sociais li:nth-child(4) a {
+  .footer__sociais li:nth-child(5) a {
     transition: 0.4s;
   }
-  .footer__sociais li:nth-child(4) a:hover {
+  .footer__sociais li:nth-child(5) a:hover {
     font-weight: 700;
   }
   .footer__end a {
