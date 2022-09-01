@@ -47,22 +47,34 @@
 
 .chamada__img {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   flex-direction: column;
+  img {
+    box-shadow: 0px 74px 80px rgba(0, 0, 0, 0.14),
+      0px 27.0112px 29.2013px rgba(0, 0, 0, 0.0965974),
+      0px 13.1134px 14.1767px rgba(0, 0, 0, 0.0778807),
+      0px 6.42845px 6.94968px rgba(0, 0, 0, 0.0621193),
+      0px 2.54182px 2.74791px rgba(0, 0, 0, 0.0434026);
+  }
+}
+
+.chamada__img-leg {
+  background-color: $grey-black;
+  color: $bg-light;
   box-shadow: 0px 74px 80px rgba(0, 0, 0, 0.14),
     0px 27.0112px 29.2013px rgba(0, 0, 0, 0.0965974),
     0px 13.1134px 14.1767px rgba(0, 0, 0, 0.0778807),
     0px 6.42845px 6.94968px rgba(0, 0, 0, 0.0621193),
     0px 2.54182px 2.74791px rgba(0, 0, 0, 0.0434026);
 }
-
-.chamada__img-leg {
-  background-color: $grey-black;
-  color: $bg-light;
-}
 .chamada__img-leg2 {
   background-color: $bg-light;
   color: $grey-black;
+  box-shadow: 0px 74px 80px rgba(0, 0, 0, 0.14),
+    0px 27.0112px 29.2013px rgba(0, 0, 0, 0.0965974),
+    0px 13.1134px 14.1767px rgba(0, 0, 0, 0.0778807),
+    0px 6.42845px 6.94968px rgba(0, 0, 0, 0.0621193),
+    0px 2.54182px 2.74791px rgba(0, 0, 0, 0.0434026);
 }
 
 // Mobile
@@ -101,7 +113,7 @@
     grid-row: 1;
     img {
       height: 200px;
-      object-fit: cover;
+      object-fit: fill;
     }
   }
 }
