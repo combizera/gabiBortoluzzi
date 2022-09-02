@@ -724,8 +724,23 @@ header {
   max-width: 100%;
 }
 
-.blog__img {
+.blog__img1 {
+  background-image: url("./../img/morte.jpg");
+  background-size: cover;
+  height: 250px;
+  border-radius: 2px;
+}
+
+.blog__img2 {
   background-image: url("./../img/prob2.png");
+  background-size: cover;
+  height: 250px;
+  border-radius: 2px;
+}
+
+.blog__img3 {
+  background-image: url("./../img/divorcioLeve.jpg");
+  background-size: cover;
   height: 250px;
   border-radius: 2px;
 }
@@ -1083,7 +1098,7 @@ p {
 .artigo-subtitulo {
   font-weight: 500;
   font-size: 1.25rem;
-  color: rgb(122, 122, 122);
+  color: #3e3b3b;
   margin-left: 0;
 }
 
@@ -1093,6 +1108,13 @@ p {
   font-size: 1.125rem;
   line-height: 140%;
   color: rgb(122, 122, 122);
+}
+.artigo-conteudo .span-list {
+  padding: 0 5rem;
+  display: block;
+}
+.artigo-conteudo .span-list::before {
+  content: "*";
 }
 
 .artigo-ft {
@@ -1161,6 +1183,7 @@ aside p {
   grid-template-columns: auto 1fr;
   grid-template-rows: auto 1fr;
   margin-bottom: 2rem;
+  align-items: center;
 }
 .artigos__textos span {
   background-color: #8f2525;
@@ -1172,8 +1195,8 @@ aside p {
   grid-column: 1;
 }
 .artigos__textos p {
-  font-weight: 500;
-  font-size: 16px;
+  font-weight: 700;
+  font-size: 0.875rem;
   padding-top: 0.5rem;
   grid-row: 2;
   grid-column: 1;
@@ -1181,7 +1204,19 @@ aside p {
 .artigos__textos img {
   grid-row: 1/-1;
   grid-column: 2;
-  margin: 0 auto;
+  margin: 0 -1rem 0 1rem;
+  width: 130px;
+  height: 100px;
+  border-radius: 2px;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+.artigos-link-interno {
+  color: inherit;
+}
+.artigos-link-interno:hover img {
+  opacity: 1;
 }
 
 .artigos__textos-tit {
@@ -1190,6 +1225,26 @@ aside p {
   font-size: 1.125rem !important;
   color: #3e3b3b !important;
   margin: 2rem 0 1rem 0 !important;
+}
+
+.artigos__share div {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  gap: 1rem;
+}
+.artigos__share div img {
+  max-width: 30px;
+}
+
+.artigos__share-item {
+  padding: 0.5rem;
+  border: 2px solid #8f2525;
+  transition: 0.2s;
+  opacity: 0.8;
+}
+.artigos__share-item:hover {
+  opacity: 1;
 }
 
 @media (max-width: 800px) {

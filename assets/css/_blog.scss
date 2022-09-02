@@ -6,8 +6,21 @@
   max-width: 100%;
 }
 
-.blog__img {
+.blog__img1 {
+  background-image: url("./../img/morte.jpg");
+  background-size: cover;
+  height: 250px;
+  border-radius: 2px;
+}
+.blog__img2 {
   background-image: url("./../img/prob2.png");
+  background-size: cover;
+  height: 250px;
+  border-radius: 2px;
+}
+.blog__img3 {
+  background-image: url("./../img/divorcioLeve.jpg");
+  background-size: cover;
   height: 250px;
   border-radius: 2px;
 }
