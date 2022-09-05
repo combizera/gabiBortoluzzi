@@ -12,6 +12,9 @@ h4::selection,
 h5::selection,
 h6::selection,
 label::selection,
+span::selection,
+strong::selection,
+br::selection,
 p::selection {
   background-color: #a83e3e;
   color: #faf9f2;
@@ -49,3 +52,4 @@ ul {
 @import "./_contato.scss";
 @import "./_footer.scss";
 @import "./_artigos.scss";
+@import "./_swiper.scss";

@@ -14,6 +14,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700;900&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- Library Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -31,7 +34,7 @@
                 <li class="header__nav-item"><a class="header__link" href="#sobre">sobre</a></li>
                 <li class="header__nav-item"><a class="header__link" href="#depoimentos">depoimento</a></li>
                 <li class="header__nav-item"><a class="header__link" href="#contato">contato</a></li>
-                <li class="header__nav-item"><a class="header__link" href="#blog">blog</a></li>
+                <li class="header__nav-item"><a class="header__link" id="header-destaque" href="#blog">blog</a></li>
             </ul>
         </nav>
     </header>
@@ -93,8 +96,32 @@
 
         <article id="depoimentos" class="depo-bg" aria-label="Depoimentos de clientes">
             <div class="depo container">
-                <p class="depo__depo">Gabriela é uma excelente profissional, com uma excelente escuta e entendimento das leis. Sempre muito atenciosa, consegue captar nossos anseios e com empatia elaborar o melhor método de trabalho para cada situação. Não pensando apenas no lucro, mas sim no bem estar e melhor vida para todos. Necessitamos dos seus trabalhos, e não tivemos arrependimento algum, pois sempre que foi preciso, estava disposta a nos orientar. Recomendamos ela sempre por essas qualidades que nem todo advogado tem.</p>
-                <p class="depo__name">Sheila e Maurício</p>
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <p class="depo__depo">Gabriela é uma excelente profissional, com uma excelente escuta e entendimento das leis. Sempre muito atenciosa, consegue captar nossos anseios e com empatia elaborar o melhor método de trabalho para cada situação. Não pensando apenas no lucro, mas sim no bem estar e melhor vida para todos. Necessitamos dos seus trabalhos, e não tivemos arrependimento algum, pois sempre que foi preciso, estava disposta a nos orientar. Recomendamos ela sempre por essas qualidades que nem todo advogado tem.</p>
+                            <p class="depo__name">Sheila e Maurício</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="depo__depo">
+                            <p class="depo__depo">Uma ótima profissional trabalha com seriedade e recomendo com absoluta confiança no seu trabalho.</p>
+                            <p class="depo__name">Julio Cesar</p>
+                            </p>
+                        </div>
+                        <div class="swiper-slide">Slide 3</div>
+
+                    </div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
+                </div>
+
             </div>
         </article>
 
@@ -108,7 +135,7 @@
                 <div class="chamada__txt2 ">
                     <h2 class="tit-sec">Por que os clientes procuram o escritório?</h2>
                     <span class="divisor dv2"></span>
-                    <p class="txt-base">Meu nome é Gabriela Broilo Bortoluzzi, sou advogada inscrita na <strong> OAB/RS 99.286</strong>, com mais de 12 anos de trabalhando na área jurídica, sendo 7 de atuação plena da advocacia.
+                    <p class="txt-base">Meu nome é Gabriela Broilo Bortoluzzi, sou advogada inscrita na <strong> OAB/RS 99.286</strong>. Trabalho há mais de 12 anos na área jurídica, sendo 7 de atuação plena da advocacia.
                         <br><br>
                         Sou <strong>especialista em direito de família</strong>, com pós graduação e experiência na área. Busco atender meu atuais e futuros clientes sempre de forma humanizada, <strong>entendendo a história de cada um.</strong> Juntos, buscamos a melhor alternativa para solucionar as situações trazidas, priorizando sempre a <strong>mais efetiva e menos dolorosa</strong> para o cliente. <br><br>
                         Os atendimentos são com hora marcada, no escritório ou de forma virtual. Prezo pela <strong>seriedade e profissionalismo da advocacia</strong>, com prestação de serviço de alta qualidade, personalizada (cada ação é única, como a história de cada um), atuando sempre com <strong>dedicação, comprometimento</strong> e em conformidade com as normativas éticas da advocacia.
@@ -126,7 +153,7 @@
             </div>
             <div class="blog__grid">
                 <div class="blog__item">
-                    <a href="./blog/como-sacar-valores-apos-falencimento.html" target="_blank" rel="noopener noreferrer">
+                    <a href="./blog/como-sacar-valores-apos-falecimento.html" target="_blank" rel="noopener noreferrer">
                         <div class="blog__img1">
                         </div>
                     </a>
@@ -137,7 +164,7 @@
                             <p>JUL. 2021</p>
                         </div>
                         <p class="blog__txt">Quando alguém falece, geralmente a família inicia o inventário do falecido para fazer a partilha dos bens entre seus herdeiros. Contudo, nem sempre é necessário abrir um processo complexo como um inventário, que pode demorar anos até seu término.</p>
-                        <a class="btn-veja-mais" href="./blog/como-sacar-valores-apos-falencimento.html" target="_blank">veja mais<span class="seta"></span></a>
+                        <a class="btn-veja-mais" href="./blog/como-sacar-valores-apos-falecimento.html" target="_blank">veja mais<span class="seta"></span></a>
                     </div>
                 </div>
                 <div class="blog__item">
@@ -174,7 +201,7 @@
             <div class="blog__newsletter">
                 <h3>Não perca nenhuma postagem<span></span></h3>
                 <div class="blog__input">
-                    <form class="blog__form" action="./" method="POST">
+                    <form class="blog__form" action="./newsletter.php" method="POST">
 
                         <label for="news-email">Inscreva-se para que possamos enviar emails sempre que tiver conteúdo novo</label>
 
@@ -182,7 +209,7 @@
                             <input id="news-email" type="email" name="news-email" placeholder="Insira aqui seu melhor e-mail" required>
                             <button id="btn-insc">Inscrever</button>
                             <div class="blog__check">
-                                <input type="checkbox" id="termos" name="termos">
+                                <input type="checkbox" id="termos" name="termos" required>
                                 <label for="termos">Eu aceito receber e-mails</label>
                             </div>
                         </div>
@@ -196,18 +223,18 @@
                 <div class="chamada__txt ">
                     <h2 class="tit-sec">Contato</h2>
                     <span class="divisor dv1"></span>
-                    <form class="blog__form" action="./" method="POST">
+                    <form class="blog__form" action="./enviar.php" method="POST">
                         <label for="contato-nome">Nome</label>
-                        <input placeholder="Nome Completo" id="contato-nome" type="text">
+                        <input placeholder="Nome Completo" id="contato-nome" type="text" name="contato-nome" required>
                         <label for="contato-email">Email</label>
-                        <input placeholder="Seu melhor email" id="contato-email" type="email">
+                        <input placeholder="Seu melhor email" id="contato-email" type="email" name="contato-email" required>
                         <label for="contato-mensagem">Mensagem</label>
                         <textarea placeholder="Digite aqui sua mensagem" name="contato-mensagem" id="contato-mensagem" rows="5"></textarea>
 
                         <button type="submit">Enviar Mensagem</button>
                     </form>
                 </div>
-                <div class="chamada__img"><img src="./assets/img/coffee.jpg" alt="Mulher passando por um momento difícil">
+                <div class="chamada__img"><img src="./assets/img/coffee.jpg" alt="Venha tomar um café conosco">
                     <div class="chamada__img-leg">
                         <h5>Venha tomar um café</h5>
                     </div>
@@ -243,7 +270,7 @@
                         <li>
                             <a href="https://www.instagram.com/advogadagabrielabortoluzzi/" target="_blank">
                                 <img src="./assets/img/instagram.svg" alt="Botão para conhecer o Instagram">
-                                <p>@bortoluzziadv</p>
+                                <p>@advogadagabrielabortoluzzi</p>
                             </a>
                         </li>
                         <li>
@@ -283,10 +310,18 @@
     </footer>
     <script src="./js/jquery-3.6.1.js"></script>
 
+
+    <!-- Meus scripts -->
     <script src="./js/script.js"></script>
     <script src="./js/more.js"></script>
 
+    <!-- Library Veja Mais -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <!-- Library Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
+
 </body>
 
 </html>
