@@ -113,9 +113,14 @@
     grid-row: 1;
     img {
       height: 200px;
-      object-fit: fill;
+      object-fit: cover;
+      width: 100%;
     }
   }
+}
+
+#chamada-ft-gabriela {
+  object-position: top;
 }
 
 // Telas Grandes

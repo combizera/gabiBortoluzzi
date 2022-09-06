@@ -688,10 +688,16 @@ header {
   }
   .chamada__img img {
     height: 200px;
-    -o-object-fit: fill;
-       object-fit: fill;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
   }
 }
+#chamada-ft-gabriela {
+  -o-object-position: top;
+     object-position: top;
+}
+
 @media (min-width: 1400px) {
   .chamada-bg {
     background: linear-gradient(90deg, #faf9f2 70%, #892323 70%, #872222 85%, #faf9f2 85%);
@@ -736,7 +742,7 @@ header {
   text-align: right;
   margin-top: 16px;
   color: #faf9f2;
-  z-index: 100000 !important;
+  z-index: 1000 !important;
 }
 
 @media (max-width: 800px) {
@@ -747,10 +753,13 @@ header {
     margin: 48px 0;
   }
   .depo {
-    padding: 64px 64px;
+    padding: 64px 0px;
   }
   .depo__depo {
     line-height: 150%;
+  }
+  .depo__name {
+    margin-right: 16px;
   }
 }
 .blog__grid {
@@ -901,7 +910,7 @@ header {
 
 @media (max-width: 800px) {
   #blog {
-    margin: 7rem 0 !important;
+    margin: 5rem 0 !important;
   }
   .blog__grid {
     grid-template-columns: 1fr;
