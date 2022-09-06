@@ -59,20 +59,19 @@
         <div class="blog__newsletter">
           <h3>Não perca nenhuma postagem<span></span></h3>
           <div class="blog__input">
-            <form class="blog__form" action="./" method="POST">
-
+            <form class="blog__form" action="./../newsletter.php" method="POST" id="home-form-news">
               <label for="news-email">Inscreva-se para que possamos enviar emails sempre que tiver conteúdo novo</label>
 
               <div class="testee">
                 <input id="news-email" type="email" name="news-email" placeholder="Insira aqui seu melhor e-mail" required>
                 <button id="btn-insc">Inscrever</button>
                 <div class="blog__check">
-                  <input type="checkbox" id="termos" name="termos">
+                  <input type="checkbox" id="termos" name="termos" required>
                   <label for="termos">Eu aceito receber e-mails</label>
                 </div>
               </div>
-            </form>
           </div>
+          </form>
         </div>
       </main>
     </div>

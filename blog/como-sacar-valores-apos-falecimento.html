@@ -54,67 +54,67 @@
         <div class="blog__newsletter">
           <h3>Não perca nenhuma postagem<span></span></h3>
           <div class="blog__input">
-            <form class="blog__form" action="./" method="POST">
-
+            <form class="blog__form" action="./../newsletter.php" method="POST" id="home-form-news">
               <label for="news-email">Inscreva-se para que possamos enviar emails sempre que tiver conteúdo novo</label>
 
               <div class="testee">
                 <input id="news-email" type="email" name="news-email" placeholder="Insira aqui seu melhor e-mail" required>
                 <button id="btn-insc">Inscrever</button>
                 <div class="blog__check">
-                  <input type="checkbox" id="termos" name="termos">
+                  <input type="checkbox" id="termos" name="termos" required>
                   <label for="termos">Eu aceito receber e-mails</label>
                 </div>
               </div>
-            </form>
           </div>
+          </form>
         </div>
-      </main>
+    </div>
+    </main>
+  </div>
+
+  <aside>
+    <div class="artigo__perfil">
+      <div class="artigo__perfil-gabi">
+        <img src="./../assets/img/gabi2.jpg" alt="Advogada Gabriela Bortoluzzi">
+      </div>
+      <p>Gabriela Bortoluzzi</p>
+      <p class="artigo__perfil-desc">Especialista em direito de família, com pós graduação e experiência na área. Busco atender meu atuais e futuros clientes sempre de forma humanizada, entendendo a história de cada um.</p>
+      <div class="artigo__perfil-btns"><a href=""></a><a href=""></a><a href=""></a></div>
+    </div>
+    <div class="artigos__share">
+      <p class="artigos__textos-tit">Compartilhe</p>
+      <div>
+        <div class="artigos__share-item"><a href="https://api.whatsapp.com/send?text=https://bortoluzziadvocacia.com.br/blog/como-sacar-valores-apos-falecimento.html" target="_blank"><img src="./../assets/img/whatsapp-verm.svg" alt="Ícone do Whatsapp"></a></div>
+        <div class="artigos__share-item"><a href="https://www.facebook.com/sharer/sharer.php?u=https://bortoluzziadvocacia.com.br/blog/como-sacar-valores-apos-falecimento.html" target="_blank"><img src="./../assets/img/facebook-verm.svg" alt="Ícone do Facebook"></a></div>
+        <div class="artigos__share-item"><a href="mailto:atendimento@bortoluzziadvocacia.com.br"><img src="./../assets/img/email-verm.svg" alt="Ícone de um email"></a></div>
+      </div>
     </div>
 
-    <aside>
-      <div class="artigo__perfil">
-        <div class="artigo__perfil-gabi">
-          <img src="./../assets/img/gabi2.jpg" alt="Advogada Gabriela Bortoluzzi">
-        </div>
-        <p>Gabriela Bortoluzzi</p>
-        <p class="artigo__perfil-desc">Especialista em direito de família, com pós graduação e experiência na área. Busco atender meu atuais e futuros clientes sempre de forma humanizada, entendendo a história de cada um.</p>
-        <div class="artigo__perfil-btns"><a href=""></a><a href=""></a><a href=""></a></div>
-      </div>
-      <div class="artigos__share">
-        <p class="artigos__textos-tit">Compartilhe</p>
+    <div class="artigos__textos">
+      <p class="artigos__textos-tit">Leia mais textos</p>
+      <a class="artigos-link-interno" href="./guarda-compartilhada-em-tempos-de-coronavirus.html" target="_blank" rel="noopener noreferrer">
         <div>
-          <div class="artigos__share-item"><a href="https://api.whatsapp.com/send?text=https://bortoluzziadvocacia.com.br/blog/como-sacar-valores-apos-falecimento.html" target="_blank"><img src="./../assets/img/whatsapp-verm.svg" alt="Ícone do Whatsapp"></a></div>
-          <div class="artigos__share-item"><a href="https://www.facebook.com/sharer/sharer.php?u=https://bortoluzziadvocacia.com.br/blog/como-sacar-valores-apos-falecimento.html" target="_blank"><img src="./../assets/img/facebook-verm.svg" alt="Ícone do Facebook"></a></div>
-          <div class="artigos__share-item"><a href="mailto:atendimento@bortoluzziadvocacia.com.br"><img src="./../assets/img/email-verm.svg" alt="Ícone de um email"></a></div>
+          <span>Direitos da Família</span>
+          <p>Guarda compartilhada em tempos de coronavírus</p>
+          <img src="./../assets/img/guarda-compartilhada.jpg" alt="guarda compartilhada">
         </div>
-      </div>
-
-      <div class="artigos__textos">
-        <p class="artigos__textos-tit">Leia mais textos</p>
-        <a class="artigos-link-interno" href="./guarda-compartilhada-em-tempos-de-coronavirus.html" target="_blank" rel="noopener noreferrer">
-          <div>
-            <span>Direitos da Família</span>
-            <p>Guarda compartilhada em tempos de coronavírus</p>
-            <img src="./../assets/img/guarda-compartilhada.jpg" alt="guarda compartilhada">
-          </div>
-        </a>
-        <a class="artigos-link-interno" href="./posso-fazer-meu-divorcio-em-cartorio.html" target="_blank" rel="noopener noreferrer">
-          <div>
-            <span>Direitos da Família</span>
-            <p>Possso fazer meu divórcio em cartório?</p>
-            <img src="./../assets/img/divorcioLeve.jpg" alt="Divórcio em Cartório">
-          </div>
-        </a>
-        <a class="artigos-link-interno" href="./dez-anos-da-lei-de-alienacao.html" target="_blank" rel="noopener noreferrer">
-          <div>
-            <span>Direitos da Família</span>
-            <p>Dez anos da Lei de Alienação Parental</p>
-            <img src="./../assets/img/prob2.png" alt="Alienação Parental">
-          </div>
-        </a>
-      </div>
-    </aside>
+      </a>
+      <a class="artigos-link-interno" href="./posso-fazer-meu-divorcio-em-cartorio.html" target="_blank" rel="noopener noreferrer">
+        <div>
+          <span>Direitos da Família</span>
+          <p>Possso fazer meu divórcio em cartório?</p>
+          <img src="./../assets/img/divorcioLeve.jpg" alt="Divórcio em Cartório">
+        </div>
+      </a>
+      <a class="artigos-link-interno" href="./dez-anos-da-lei-de-alienacao.html" target="_blank" rel="noopener noreferrer">
+        <div>
+          <span>Direitos da Família</span>
+          <p>Dez anos da Lei de Alienação Parental</p>
+          <img src="./../assets/img/prob2.png" alt="Alienação Parental">
+        </div>
+      </a>
+    </div>
+  </aside>
   </div>
   <footer class="bg-footer">
     <div class="container">
